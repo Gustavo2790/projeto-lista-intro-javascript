@@ -88,7 +88,8 @@ function checaStringsMesmoTamanho(string1, string2) {
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-
+  let primeiroArray = array[0]
+  return primeiroArray
 }
 
 // EXERCÍCIO 10
