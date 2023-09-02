@@ -66,7 +66,8 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-
+  let stringMinuscula = prompt('Digite uma palavra qualquer:')
+  return stringMinuscula.toUpperCase()
 }
 
 // EXERCÍCIO 07
