@@ -37,7 +37,10 @@ function imprimeIdade() {
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-
+  let pesoQuilos = Number(prompt('Digite seu peso em quilos (use pontos para as casas decimais):'))
+  let alturaMetros = Number(prompt('Digite sua altura em metros (use pontos para as casas decimais):'))
+  let imc = pesoQuilos / (alturaMetros * alturaMetros)
+  return Number(imc.toFixed(1))
 }
 
 // EXERCÍCIO 04
