@@ -37,8 +37,8 @@ function imprimeIdade() {
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-  let pesoQuilos = Number(prompt('Digite seu peso em quilos (use pontos para as casas decimais):'))
-  let alturaMetros = Number(prompt('Digite sua altura em metros (use pontos para as casas decimais):'))
+  let pesoQuilos = peso
+  let alturaMetros = altura
   let imc = pesoQuilos / (alturaMetros * alturaMetros)
   return Number(imc.toFixed(1))
 }
@@ -66,14 +66,15 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-  let stringMinuscula = prompt('Digite uma palavra qualquer:')
+  let stringMinuscula = string
   return stringMinuscula.toUpperCase()
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-
+   let numeroDeIngressos = custo / valorIngresso
+  return numeroDeIngressos
 }
 
 // EXERCÍCIO 08
