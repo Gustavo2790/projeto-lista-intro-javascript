@@ -37,9 +37,7 @@ function imprimeIdade() {
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-  let pesoQuilos = peso
-  let alturaMetros = altura
-  let imc = pesoQuilos / (alturaMetros * alturaMetros)
+  let imc = peso / (altura * altura)
   return Number(imc.toFixed(1))
 }
 
@@ -66,8 +64,7 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-  let stringMinuscula = string
-  return stringMinuscula.toUpperCase()
+  return string.toUpperCase()
 }
 
 // EXERCÍCIO 07
@@ -80,23 +77,19 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-  let tamanhoString1 = string1.length
-  let tamanhoString2 = string2.length
-  return tamanhoString1 === tamanhoString2
+    return string1.length === string2.length
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-  let primeiroArray = array[0]
-  return primeiroArray
+  return array[0]
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-  let ultimoArray = array.pop()
-  return ultimoArray
+  return array.pop()
 }
 
 // EXERCÍCIO 11
@@ -104,17 +97,15 @@ function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
   let removePrimeiroArray = array.shift()
   let removeUltimoArray = array.pop()
-  let trocaUltimoParaPrimeiro = array.unshift(removeUltimoArray)
-  let trocaPrimeiroParaUltimo = array.push(removePrimeiroArray)
+  array.unshift(removeUltimoArray)
+  array.push(removePrimeiroArray)
   return array
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-  let stringMinuscula1 = string1.toLowerCase()
-  let stringMinuscula2 = string2.toLowerCase()
-  return stringMinuscula1 === stringMinuscula2
+    return string1.toLowerCase() === string2.toLowerCase()
 }
 
 // EXERCÍCIO 13
